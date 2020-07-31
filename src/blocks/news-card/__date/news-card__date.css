@@ -1,0 +1,9 @@
+.news-card__date {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #B6BCBF;
+  margin-bottom: 12px;
+}

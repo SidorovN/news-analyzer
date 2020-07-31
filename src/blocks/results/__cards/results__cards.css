@@ -1,0 +1,8 @@
+.results__cards {
+  margin: 64px 0;
+  flex-grow: 1;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 16px;
+}

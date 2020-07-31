@@ -1,0 +1,11 @@
+@import url('./_theme/button_theme_color.css');
+@import url('./_theme/button_theme_gray.css');
+
+.button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+}

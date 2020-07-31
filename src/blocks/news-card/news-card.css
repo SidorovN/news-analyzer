@@ -1,0 +1,21 @@
+@import url('./__author/news-card__author.css');
+@import url('./__container/news-card__container.css');
+@import url('./__date/news-card__date.css');
+@import url('./__heading/news-card__heading.css');
+@import url('./__image/news-card__image.css');
+@import url('./__link/news-card__link.css');
+@import url('./__text/news-card__text.css');
+
+
+.news-card {
+  background-color: #fff;
+  list-style: none;
+  width: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: .3s;
+}
+.news-card:hover {
+  box-shadow: 6px 4px 6px 3px rgba(0,0,0,.3)
+}

@@ -1,0 +1,10 @@
+@import url('./__cover/root__cover.css');
+@import url('./__cover/_bg/root__cover_bg_gray.css');
+@import url('./__cover/_bg/root__cover_bg_image.css');
+@import url('./__section/root__section.css');
+@import url('./__section/_layout/root__section_layout.css');
+@import url('./__section/_main/root__section_main.css');
+
+.root {
+  width: 100%;
+}

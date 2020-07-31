@@ -1,0 +1,6 @@
+@import url('./__avatar/about__avatar.css');
+@import url('./__column/about__column.css');
+
+.about {
+  display: flex;
+}

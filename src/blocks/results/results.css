@@ -1,0 +1,11 @@
+@import url('./__button/results__button.css');
+@import url('./__cards/results__cards.css');
+@import url('./__link/results__link.css');
+@import url('./__title/results__title.css');
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

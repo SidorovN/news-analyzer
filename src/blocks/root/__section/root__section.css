@@ -1,0 +1,7 @@
+.root__section {
+  box-sizing: border-box;
+  max-width: 1440px;
+  padding-left: 104px;
+  padding-right: 104px;
+  margin: 0 auto;
+}

@@ -1,0 +1,30 @@
+@import url('./_size/title_size_l.css');
+@import url('./_size/title_size_m.css');
+@import url('./_size/title_size_s.css');
+@import url('./_theme/title_theme_color.css');
+
+.title {
+  font-family: 'Roboto Slab';
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+.text {
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.text_theme_white {
+  color: #1A1B22;
+}
+.text_theme_color {  
+  color: #FFFFFF;
+}
+
+.text_theme_gray {
+  color: #B6BCBF;
+}
+

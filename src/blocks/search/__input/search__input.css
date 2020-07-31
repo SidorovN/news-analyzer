@@ -1,0 +1,16 @@
+.search__input {
+  flex:1;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: -32px;
+  border: none;
+  font-size: 16px;
+  line-height: 22px;
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 66px;
+  outline: none;
+  border-radius: 32px 0 0 32px;
+  border: 1px solid #D1D2D6;
+  border-right: none;
+}
