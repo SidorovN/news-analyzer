@@ -51,7 +51,8 @@ module.exports = {
   },
   entry: {
     main: './src/scripts/index', 
-    about: './src/scripts/about'
+    about: './src/scripts/about',
+    analytics: './src/scripts/analytics'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -79,6 +80,11 @@ module.exports = {
       inject: false,
       template: './src/about.html',
       filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/analytics.html',
+      filename: 'analytics.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

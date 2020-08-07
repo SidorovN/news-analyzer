@@ -1,3 +1,15 @@
 .results__link {
   color: #1A1B22;
 }
+
+.results__link::after {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  height: 25px;
+  width: 9px;
+  margin-left: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.58564 7.00008L0.292743 12.293L1.70696 13.7072L8.41406 7.00008L1.70696 0.292969L0.292743 1.70718L5.58564 7.00008Z' fill='%231A1B22'/%3E%3C/svg%3E%0A");
+}

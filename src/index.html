@@ -13,10 +13,10 @@
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
-          <a href="./index.html" class="link header__link header__link_theme_color header__link_active">Главная</a>
+          <a href="./index.html" class="link header__link header__link_active">Главная</a>
         </li>
         <li class="header__nav-item">
-          <a href="./about.html" class="link header__link header__link_theme_color">О проекте</a>
+          <a href="./about.html" class="link header__link">О проекте</a>
         </li>
       </ul>
     </nav>
@@ -49,10 +49,10 @@
     </section>
     <section class="results results_opened root__section root__section_main">
       <h2 class="title title_size_m results__title">Результаты поиска</h2>
-      <a href="./analitycs.html" class="link results__link">Посмотреть аналитику</a>
+      <a href="./analytics.html" class="link results__link">Посмотреть аналитику</a>
       <ul class="results__cards">
         <li class="news-card">
-          <a href="" class="news-card__link">
+          <a href="" target="_blank" class="news-card__link">
             <img class="news-card__image" src="https://xn----dtbjkdrhdlujmd8i.xn--p1ai/wp-content/uploads/2019/08/%D0%A0%D0%B8%D1%81.1-6.png"></img>
             <div class="news-card__container">
               <p class="news-card__date">2 августа, 2019</p>
@@ -71,13 +71,13 @@
   <section class="about root__section root__section_main">
     <img src="<%=require('./images/image-03.jpg').default%>" alt="Фотография автора" class="about__avatar">
     <div class="about__column">
-      <h2 class="title title_size_m">Об авторе</h2>
+      <h2 class="about__title title title_size_m">Об авторе</h2>
       <p class="text text_theme_white about__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
       <p class="text text_theme_white about__subtitle">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
     </div>
   </section>
   <footer class="footer root__section root__section_layout">
-    <p class="footer__copyright">© 2019  Supersite</p>
+    <p class="footer__copyright">© 2019 Supersite</p>
     <nav class="footer__nav">
       <ul class="footer__nav-list">
         <li class="footer__nav-item"><a href="" class="link footer__link">Главная</a></li>
@@ -86,10 +86,10 @@
       </ul>
     </nav>
     <div class="footer__social-group">
-      <a href="" class="link footer__social-link">
+      <a href="https://github.com/SidorovN" target="_blank" class="link footer__social-link">
         <img src="<%=require('./images/gh.svg').default%>" alt="Гитхаб" class="footer__social-image">
       </a>
-      <a href="" class="link footer__social-link">
+      <a href="" target="_blank" class="link footer__social-link">
         <img src="<%=require('./images/fb.svg').default%>" alt="Фейсбук" class="footer__social-image">
       </a>
     </div>

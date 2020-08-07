@@ -1,14 +1,15 @@
 @import url('./__container/header__container.css');
 @import url('./__link/header__link.css');
-@import url('./__link/_theme/_color/header__link_theme_color.css');
 @import url('./__link/_active/header__link_active.css');
 @import url('./__logo/header__logo.css');
 @import url('./__nav-item/header__nav-item.css');
 @import url('./__nav-list/header__nav-list.css');
 @import url('./__nav/header__nav.css');
 @import url('./_theme/header_theme_color.css');
+@import url('./_theme/header_theme_white.css');
 
 
 .header {
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  /* box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2); */
 }
+/* box-shadow: inset 0px -1px 0px #D1D2D6; */
