@@ -1,11 +1,3 @@
-@import url('./__copyright/footer__copyright.css');
-@import url('./__link/footer__link.css');
-@import url('./__nav-item/footer__nav-item.css');
-@import url('./__nav-list/footer__nav-list.css');
-@import url('./__nav/footer__nav.css');
-@import url('./__social-group/footer__social-group.css');
-@import url('./__social-image/footer__social-image.css');
-@import url('./__social-link/footer__social-link.css');
 
 .footer {
   display: flex;

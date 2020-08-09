@@ -1,0 +1,3 @@
+.table__cell_wide {
+    grid-column: 2/-1;
+}

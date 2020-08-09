@@ -1,0 +1,11 @@
+.github__list {
+    margin: 0 -8px 40px;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+.github__list::-webkit-scrollbar {
+    width: 0;
+}

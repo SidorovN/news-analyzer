@@ -1,0 +1,17 @@
+.table__heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+.table__heading:last-child {
+    text-align: right;
+}
+.table__heading:first-child,
+.table__heading:nth-child(2) {
+    text-align: left;
+}

@@ -1,0 +1,7 @@
+.commit-card__avatar {
+    align-self: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    grid-row: 2/4;
+}

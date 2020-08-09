@@ -1,0 +1,25 @@
+
+.stack {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stack__title {
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+.stack__list {
+    display: flex;
+    margin: 0 -20px;
+    padding: 0;
+}
+
+.stack__tech {
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+}
+.stack__tech-heading {
+    text-align: center;
+}

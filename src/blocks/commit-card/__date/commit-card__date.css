@@ -1,0 +1,8 @@
+.commit-card__date {
+    margin-bottom: 16px;
+    grid-column: 1/-1;
+    font-family:'Roboto';
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;
+}

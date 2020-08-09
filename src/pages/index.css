@@ -4,164 +4,69 @@
 @import url('../blocks/button/button.css');
 @import url('../blocks/title/title.css');
 @import url('../blocks/link/link.css');
+@import url('../blocks/text/text.css');
 
 @import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__copyright/footer__copyright.css');
+@import url('../blocks/footer/__link/footer__link.css');
+@import url('../blocks/footer/__nav-item/footer__nav-item.css');
+@import url('../blocks/footer/__nav-list/footer__nav-list.css');
+@import url('../blocks/footer/__nav/footer__nav.css');
+@import url('../blocks/footer/__social-group/footer__social-group.css');
+@import url('../blocks/footer/__social-image/footer__social-image.css');
+@import url('../blocks/footer/__social-link/footer__social-link.css');
+
 @import url('../blocks/header/header.css');
+@import url('../blocks/header/__container/header__container.css');
+@import url('../blocks/header/__link/header__link.css');
+@import url('../blocks/header/__link/_active/header__link_active.css');
+@import url('../blocks/header/__logo/header__logo.css');
+@import url('../blocks/header/__nav-item/header__nav-item.css');
+@import url('../blocks/header/__nav-list/header__nav-list.css');
+@import url('../blocks/header/__nav/header__nav.css');
+@import url('../blocks/header/_theme/header_theme_color.css');
+
 @import url('../blocks/about/about.css');
+@import url('../blocks/about/__avatar/about__avatar.css');
+@import url('../blocks/about/__column/about__column.css');
+@import url('../blocks/about/__title/about__title.css');
 
 @import url('../blocks/news-card/news-card.css');
+@import url('../blocks/news-card/__author/news-card__author.css');
+@import url('../blocks/news-card/__container/news-card__container.css');
+@import url('../blocks/news-card/__date/news-card__date.css');
+@import url('../blocks/news-card/__heading/news-card__heading.css');
+@import url('../blocks/news-card/__image/news-card__image.css');
+@import url('../blocks/news-card/__link/news-card__link.css');
+@import url('../blocks/news-card/__text/news-card__text.css');
+
 @import url('../blocks/not-found/not-found.css');
+@import url('../blocks/not-found/__image/not-found__image.css');
+@import url('../blocks/not-found/__subtitle/not-found__subtitle.css');
+@import url('../blocks/not-found/__title/not-found__title.css');
+
 @import url('../blocks/preloader/preloader.css');
+@import url('../blocks/preloader/__spinner/preloader__spinner.css');
+@import url('../blocks/preloader/__subtitle/preloader__subtitle.css');
+@import url('../blocks/preloader/_opened/preloader_opened.css');
+
 @import url('../blocks/results/results.css');
+@import url('../blocks/results/__button/results__button.css');
+@import url('../blocks/results/__cards/results__cards.css');
+@import url('../blocks/results/__link/results__link.css');
+@import url('../blocks/results/__title/results__title.css');
+
 @import url('../blocks/search/search.css');
 
 
 
-.header__link_theme_white.header__link_active {
-  color: #1A1B22;
-}
-.features__title {
-  margin-bottom: 24px;
-}
-.features__text {
-  max-width: 815px;
-}
 
-.stack {
-  display: flex;
-  justify-content: space-between;
-}
 
-.stack__title {
-  max-width: 350px;
-}
-.stack__list {
-  display: flex;
-  margin: 0 -20px;
-  padding: 0;
-}
 
-.stack__tech {  
-  margin: 0 20px;
-  padding: 0;
-  list-style: none;
-}
-.stack__tech-heading {
-  text-align: center;
-}
 
-.github__list {
-  margin: 0 -8px;
-  margin-bottom: 40px;
-  padding: 0;
-  width: 100%;
-  overflow-x: auto;
-  display: flex;
-  justify-content: center;
-}
-.github__list::-webkit-scrollbar {
-  width: 0;
-}
 
-.github__container {
-  width: 100%;
-  position: relative;
-}
-.github__container::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 90px;
-  top: 0;
-  left: 0;
-  background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
-}
-.github__container::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 90px;
-  top: 0;
-  right: 0;
-  background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
-}
-.github__title {
-  margin: 0 auto;
-  padding-top: 72px;
-  padding-bottom: 64px;
-}
 
-.commit-card {
-  flex-shrink: 0;
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0 8px;
-  padding: 24px;
-  flex-basis: 400px;
-  background-color: #fff;
-  border-radius: 16px;
-  min-height: 288px;
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  grid-auto-rows: min-content;
-}
 
-.commit-card__avatar {
-  align-self: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  grid-row: 2/4;
-}
-
-.commit-card__text {
-  margin: 0;
-  margin-top: 16px;  
-  font-family: 'Roboto';
-  font-size: 16px;
-  line-height: 22px;
-  grid-column: 1/-1;
-}
-
-.commit-card__name {
-  margin: 0;
-  margin-left: 16px;
-  font-family: 'Roboto Slab';
-  font-size: 20px;
-  line-height: 30px;
-  color: #1A1B22;
-}
-.commit-card__mail {
-  margin: 0;
-  margin-left: 16px;
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 22px;  
-  color: #1A1B22;
-}
-.commit-card__date {
-  margin-bottom: 16px;
-  grid-column: 1/-1;
-  font-family:'Roboto';
-  font-size: 14px;
-  line-height: 22px;
-  color: #B6BCBF;
-}
-
-.pagination {
-  max-width: 100%;
-  margin: 0 -4px;
-   padding-bottom: 80px;
-  display: flex;
-  justify-content: center;
-}
-.pagination__button {
-  margin: 0 4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #1A1B22;
-}
 
 
 

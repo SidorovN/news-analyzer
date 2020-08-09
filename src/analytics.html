@@ -16,86 +16,100 @@
           <a href="./index.html" class="link header__link">Главная</a>
         </li>
         <li class="header__nav-item">
-          <a href="./about.html" class="link header__link">О проекте</a>
+          <a href="project.html" class="link header__link">О проекте</a>
         </li>
       </ul>
     </nav>
   </div>
   </header>
-  <section class="features root__section root__section_main">
-    <h1 class="features__title title title__size_m">Вы спросили: «Путешествия»</h1>
-    <p class="features__text text">
-   </p>
+  <section class="paper root__section root__section_main">
+    <h1 class="paper__title title title_size_m">Вы спросили: «Путешествия»</h1>
+    <p class="paper__text text">Новостей за неделю: <span class="paper__text-bold">34 324</span></p>
+    <p class="paper__text text">Упоминаний в залоговках: <span class="paper__text-bold">235</span></p>
   </section>
   <div class="root__cover root__cover_bg_gray">
     
-    <section class="root__section root__section_main stack">
-      <h2 class="title title_size_m stack__title">Используемые
-        технологии</h2>
-        <ul class="stack__list">
-          <li class="stack__tech">
-            <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/html.svg').default%>" alt="HTML" class="stack__img">
-          </li>
-          <li class="stack__tech">
-            <h3 class="text stack__tech-heading">CSS</h3>
-            <img src="<%=require('./images/css.svg').default%>" alt="CSS" class="stack__img">
-          </li>
-          <li class="stack__tech">
-            <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/js.svg').default%>" alt="JavaScript" class="stack__img">
-          </li>
-          <li class="stack__tech">
-            <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/webpack.svg').default%>" alt="Webpack" class="stack__img">
-          </li>
-        </ul> 
+    <article class="stats root__section root__section_main">
+      <h2 class="title title_size_s stats__title">Аналитика по дням</h2>
+      <table class="table">
+        <tr class="table__row table__row_type_heading">
+          <th class="table__heading">Дата \n (Август)</th>
+          <th class="table__heading">Количество упоминаний</th>
+        </tr>
+        <tr class="table__row table__row_type_number">
+          <th class="table__heading"></th>
+          <th class="table__heading">0</th>
+          <th class="table__heading">25</th>
+          <th class="table__heading">50</th>
+          <th class="table__heading">75</th>
+          <th class="table__heading">100</th>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_cell">
+          <td class="table__cell">19, пн</td>
+          <td class="table__cell table__cell_wide">
+            <div class="progress-bar">
+              <span class="progress-bar__value">30</span>
+              <div class="progress-bar__fill" width="30%"></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="table__row table__row_type_number">
+          <th class="table__heading"></th>
+          <th class="table__heading">0</th>
+          <th class="table__heading">25</th>
+          <th class="table__heading">50</th>
+          <th class="table__heading">75</th>
+          <th class="table__heading">100</th>
+        </tr>
+      </table>
 
-    </section> 
+    </article>
   </div>
-
-  <section class="about root__section root__section_main">
-    <img src="<%=require('./images/image-03.jpg').default%>" alt="Фотография автора" class="about__avatar">
-    <div class="about__column">
-      <h2 class="about__title title title_size_m">Об авторе</h2>
-      <p class="text text_theme_white about__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-      <p class="text text_theme_white about__subtitle">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-    </div>
-  </section>
-
-  <section class="github root__cover root__cover_bg_gray">
-        <h2 class="root__section title title_size_m github__title">История коммитов из GitHub</h2>
-        <div class="github__container"><ul class="github__list">
-          <li class="commit-card">
-            <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-              <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-              <h3 class="commit-card__name">Мария Фёдорова</h3>
-              <p class="commit-card__mail">mariiifed@yandex.ru</p>
-            <p class="commit-card__text">With Emmet, you can type CSS-like expressions 
-              that can be dynamically parsed, and produce 
-              output depending on what you type in the abb...</p>
-          </li>
-
-          
-          <li class="commit-card">
-            <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-              <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-              <h3 class="commit-card__name">Мария Фёдорова</h3>
-              <p class="commit-card__mail">mariiifed@yandex.ru</p>
-            <p class="commit-card__text">With Emmet, you can type CSS-like expressions 
-              that can be dynamically parsed, and produce 
-              output depending on what you type in the abb...</p>
-          </li>
-
-        </ul>
-
-      </div>
-      <div class="pagination">
-        <div class="pagination__button"></div>
-        <div class="pagination__button"></div>
-        <div class="pagination__button"></div>
-      </div>
-    </section>
 
   <footer class="footer root__section root__section_layout">
     <p class="footer__copyright">© 2019  Supersite</p>
@@ -115,6 +129,7 @@
       </a>
     </div>
   </footer>
+  </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
