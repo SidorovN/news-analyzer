@@ -44,19 +44,19 @@
         <ul class="stack__list">
           <li class="stack__tech">
             <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/html.svg').default%>" alt="HTML" class="stack__img">
+            <img src="<%=require('./images/html.svg')%>" alt="HTML" class="stack__img">
           </li>
           <li class="stack__tech">
             <h3 class="text stack__tech-heading">CSS</h3>
-            <img src="<%=require('./images/css.svg').default%>" alt="CSS" class="stack__img">
+            <img src="<%=require('./images/css.svg')%>" alt="CSS" class="stack__img">
           </li>
           <li class="stack__tech">
             <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/js.svg').default%>" alt="JavaScript" class="stack__img">
+            <img src="<%=require('./images/js.svg')%>" alt="JavaScript" class="stack__img">
           </li>
           <li class="stack__tech">
             <h3 class="text stack__tech-heading">HTML</h3>
-            <img src="<%=require('./images/webpack.svg').default%>" alt="Webpack" class="stack__img">
+            <img src="<%=require('./images/webpack.svg')%>" alt="Webpack" class="stack__img">
           </li>
         </ul> 
 
@@ -64,7 +64,10 @@
   </div>
 
   <section class="about root__section root__section_main">
-    <img src="<%=require('./images/image-03.jpg').default%>" alt="Фотография автора" class="about__avatar">
+    <picture>
+      <source srcset="<%= require('./images/image-s.jpg')%>" media="(max-width: 1024px)">
+     <img src="<%=require('./images/image-03.jpg')%>" alt="Фотография автора" class="about__avatar">
+    </picture>
     <div class="about__column">
       <h2 class="about__title title title_size_m">Об авторе</h2>
       <p class="text text_theme_white about__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -156,24 +159,25 @@
       </div>
     </section>
 
-  <footer class="footer root__section root__section_layout">
-    <p class="footer__copyright">© 2019  Supersite</p>
+  <footer class="footer root__section root__section_layout"><p class="footer__copyright">&copy; 2020  Supersite</p>
     <nav class="footer__nav">
       <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a href="" class="link footer__link">Главная</a></li>
-        <li class="footer__nav-item"><a href="" class="link footer__link">О проекте</a></li>
-        <li class="footer__nav-item"><a href="" class="link footer__link">Яндекс.Практикум</a></li>
+        <li class="footer__nav-item"><a href="./index.html" class="link footer__link">Главная</a></li>
+        <li class="footer__nav-item"><a href="./project.html" class="link footer__link">О проекте</a></li>
+        <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/" target="_blank" class="link footer__link">Яндекс.Практикум</a></li>
       </ul>
     </nav>
     <div class="footer__social-group">
-      <a href="" class="link footer__social-link">
-        <img src="<%=require('./images/gh.svg').default%>" alt="Гитхаб" class="footer__social-image">
+      <a href="https://github.com/SidorovN" target="_blank"  class="link footer__social-link">
+        <img src="<%=require('./images/gh.svg')%>" alt="Гитхаб" class="footer__social-image">
       </a>
-      <a href="" class="link footer__social-link">
-        <img src="<%=require('./images/fb.svg').default%>" alt="Фейсбук" class="footer__social-image">
+      <a href="https://www.facebook.com/" class="link footer__social-link" target="_blank" >
+        <img src="<%=require('./images/fb.svg')%>" alt="Фейсбук" class="footer__social-image">
       </a>
     </div>
   </footer>
+  </div>
+
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

@@ -1,12 +1,22 @@
 .news-card {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   width: auto;
   border-radius: 16px;
   overflow: hidden;
   transition-property: all;
   transition-duration: .3s;
+  max-height: 576px;
 }
 .news-card:hover {
   box-shadow: 6px 4px 6px 3px rgba(0,0,0,.3)
 }
+
+@media screen and (max-width: 1024px) {
+  .news-card {
+    max-height: 420px;
+  }
+}
+

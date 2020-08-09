@@ -3,3 +3,8 @@
   height: 272px;
   object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
+  .news-card__image {
+    height: 150px;
+  }
+}

@@ -6,6 +6,8 @@
   .about__avatar {
     height: 232px;
     width: 232px;
+    margin-right: 32px;
+    align-self: center;
   }
 }
 

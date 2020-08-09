@@ -4,3 +4,10 @@
   line-height: 30px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .news-card__heading {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}

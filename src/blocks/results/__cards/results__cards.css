@@ -6,3 +6,10 @@
   grid-template-columns: repeat(3,1fr);
   grid-gap: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+  .results__cards {
+    grid-gap: 8px;
+    margin: 32px 0 22px;
+  }
+}

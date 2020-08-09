@@ -2,6 +2,7 @@
 @import url('./_theme/button_theme_gray.css');
 
 .button {
+  outline: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
