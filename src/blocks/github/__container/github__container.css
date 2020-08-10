@@ -1,6 +1,10 @@
 .github__container {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .github__container::after {
   content: '';

@@ -5,6 +5,12 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1024px) {
+    .stack {
+        display: block;
+    }
+}
+
 .stack__title {
     max-width: 350px;
     margin-bottom: 40px;
@@ -15,11 +21,25 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .stack__list {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 .stack__tech {
     margin: 0 20px;
     padding: 0;
     list-style: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .stack__tech {
+        margin: 0;
+    }
+}
+
 .stack__tech-heading {
     text-align: center;
 }

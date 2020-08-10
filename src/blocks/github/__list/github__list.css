@@ -1,8 +1,10 @@
 .github__list {
-    margin: 0 -8px 40px;
+    box-sizing: border-box;
+    margin: 0 -104px 40px;
     padding: 0;
     width: 100%;
     overflow-x: auto;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
 }
