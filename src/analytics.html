@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%= require('./images/favicon.png') %>" type="image/x-icon">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
   <title>Document</title>
 </head>
 <body class="root">
@@ -16,19 +18,23 @@
           <a href="./index.html" class="link header__link">Главная</a>
         </li>
         <li class="header__nav-item">
-          <a href="project.html" class="link header__link">О проекте</a>
+          <a href="./project.html" class="link header__link">О проекте</a>
         </li>
       </ul>
     </nav>
   </div>
   </header>
   <section class="paper root__section root__section_main">
+    <nav class="breadcrums">
+      <a href="./index.html" class="link breadcrums__link breadcrums__link_active">Главная/</a>
+      <a href="./analytics.html" class="link breadcrums__link">Аналитика</a>
+    </nav>
     <h1 class="paper__title title title_size_m">Вы спросили: «Путешествия»</h1>
     <p class="paper__text text">Новостей за неделю: <span class="paper__text-bold">34 324</span></p>
     <p class="paper__text text">Упоминаний в залоговках: <span class="paper__text-bold">235</span></p>
   </section>
   <div class="root__cover root__cover_bg_gray">
-    
+
     <article class="stats root__section root__section_main">
       <h2 class="title title_size_s stats__title">Аналитика по дням</h2>
       <table class="table">

@@ -1,0 +1,17 @@
+.breadcrums {
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.breadcrums__link {
+    font-weight: 400;
+    color: #B6BCBF;
+}
+
+
+.breadcrums__link_active {
+    color: #1a1b22;
+}
+
+
+

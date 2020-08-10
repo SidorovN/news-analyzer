@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%= require('./images/favicon.png')%>" type="image/x-icon">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
   <title>Document</title>
 </head>
 <body class="root">
@@ -35,7 +37,7 @@
       </div>
     </section>
   </div>
-  
+
   <div class="root__cover root__cover_bg_gray">
     <section class="preloader preloader_opened root__section root__section_main">
       <div class="preloader__spinner"></div>
@@ -44,7 +46,7 @@
     <section class="not-found not-found_opened root__section root__section_main">
       <img src="<%=require('./images/not-found_v1.svg')%>" alt="Ничего не найдено" class="not-found__image">
       <h2 class="title title_size_s not-found__title">Ничего не найдено</h2>
-      <p class="text text_theme_gray not-found__subtitle">К сожалению по вашему запросу 
+      <p class="text text_theme_gray not-found__subtitle">К сожалению по вашему запросу
         ничего не найдено.</p>
     </section>
     <section class="results results_opened root__section root__section_main">
@@ -61,7 +63,7 @@
               <cite class="news-card__author">Лента.ру</cite>
             </div>
           </a>
-        
+
       </ul>
       <button class="button button_theme_grey results__button">
         Показать еще

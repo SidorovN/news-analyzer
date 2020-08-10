@@ -35,32 +35,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|ico|svg)$/i,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: './images/[name].[ext]',
-            esModule: false,
-          }
-        },
+        test: /\.(png|jpe?g|svg|gif)$/i,
+        use: [
           {
-            loader: 'image-webpack-loader',
+            loader: 'file-loader',
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 90
-              },
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-            }
+              outputPath: 'images',
+              esModule: false,
+            },
           },
         ],
       },
@@ -72,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({ //
-      filename: './styles/[name].[contenthash].css',
+      filename: './[name].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

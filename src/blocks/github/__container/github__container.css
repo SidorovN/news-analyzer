@@ -15,6 +15,7 @@
   left: 0;
   background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
 }
+
 .github__container::before {
   content: '';
   position: absolute;
@@ -23,4 +24,11 @@
   top: 0;
   right: 0;
   background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+}
+
+@media screen and (max-width: 1024px) {
+  .github__container::before,
+  .github__container::after {
+    display: none;
+  }
 }
