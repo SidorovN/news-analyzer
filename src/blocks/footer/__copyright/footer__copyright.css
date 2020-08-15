@@ -5,3 +5,10 @@
   line-height: 22px;
   color: #B6BCBF;
 }
+
+@media screen and (max-width: 720px) {
+  .footer__copyright {
+    width: 100%;
+    order: 2;
+  }
+}

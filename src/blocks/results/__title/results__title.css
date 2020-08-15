@@ -1,3 +1,8 @@
 .results__title {
   margin: 0;
 }
+@media screen and (max-width: 720px) {
+  .results__title {
+    margin-bottom: 16px;
+  }
+}

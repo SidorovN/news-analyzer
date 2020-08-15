@@ -11,3 +11,9 @@
     padding-bottom: 21px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .header__link {
+    padding-bottom: 15px;
+  }
+}

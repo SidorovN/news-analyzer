@@ -2,3 +2,9 @@
   list-style: none;
   margin: 0 17px;
 }
+
+@media screen and (max-width: 720px) {
+  .header__nav-item {
+    margin: 0 10px;
+  }
+}

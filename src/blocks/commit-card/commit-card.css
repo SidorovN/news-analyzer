@@ -14,5 +14,12 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    .commit-card {
+        max-width: 80vw;
+    }
+}
+
+
 
 
