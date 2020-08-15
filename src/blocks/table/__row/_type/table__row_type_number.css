@@ -2,3 +2,10 @@
     margin-top: 16px;
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 425px) {
+    .table__row_type_number {
+        padding-bottom: 15px;
+        display: none;
+    }
+}

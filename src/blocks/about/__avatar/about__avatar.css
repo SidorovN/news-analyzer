@@ -11,3 +11,9 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .about {
+    margin: 0 0 24px;
+  }
+}
+
