@@ -1,0 +1,5 @@
+.table__row_type_heading {
+    min-height: 48px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #1A1B22;
+}

@@ -1,0 +1,10 @@
+.table__row {
+    display: grid;
+    grid-template-columns: 104px repeat(5,1fr);
+}
+
+@media screen and (max-width: 720px) {
+    .table__row {
+        grid-template-columns: 80px repeat(5,1fr);
+    }
+}

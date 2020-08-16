@@ -1,0 +1,19 @@
+.header__link {
+  padding-bottom: 25px;
+  color: #B6BCBF;
+}
+.header__link:hover {
+  color: inherit;
+ }
+
+@media screen and (max-width: 1024px) {
+  .header__link {
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__link {
+    padding-bottom: 15px;
+  }
+}

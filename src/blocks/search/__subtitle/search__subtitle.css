@@ -1,0 +1,10 @@
+.search__subtitle {
+  max-width: 545px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+  .search__subtitle {
+    margin-bottom: 24px;
+  }
+}

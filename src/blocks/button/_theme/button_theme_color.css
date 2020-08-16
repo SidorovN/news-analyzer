@@ -1,0 +1,13 @@
+.button_theme_color {
+  color: #fff;
+  background: #2F71E5;
+}
+.button_theme_color:hover {
+  background: #347EFF;
+}
+.button_theme_color:active {
+  background: #2A65CC;
+}
+
+
+

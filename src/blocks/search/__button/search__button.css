@@ -1,0 +1,12 @@
+.search__button {
+  padding-right: 54px;
+  padding-left: 54px;
+  position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  .search__button {
+    height: 56px;
+    border-radius: 56px;
+  }
+}

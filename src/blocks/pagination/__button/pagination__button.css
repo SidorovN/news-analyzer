@@ -1,0 +1,7 @@
+.pagination__button {
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D1D2D6;
+}

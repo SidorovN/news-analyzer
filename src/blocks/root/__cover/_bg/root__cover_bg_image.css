@@ -1,0 +1,5 @@
+.root__cover_bg_image {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../images/cover-l.jpg');
+}

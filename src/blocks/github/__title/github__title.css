@@ -1,0 +1,16 @@
+.github__title {
+    padding-top: 72px;
+    padding-bottom: 64px;
+}
+
+.github__link {
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .github__title {
+        max-width: 363px;
+        padding-bottom: 32px;
+    }
+}

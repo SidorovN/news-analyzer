@@ -1,0 +1,11 @@
+.about__title {
+  margin-top: 52px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}

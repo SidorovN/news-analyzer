@@ -1,0 +1,7 @@
+.commit-card__name {
+    margin: 0 0 0 16px;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    line-height: 30px;
+    color: #1A1B22;
+}

@@ -1,0 +1,12 @@
+.title_size_l {  
+  font-size: 60px;
+  line-height: 64px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .title_size_l {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
