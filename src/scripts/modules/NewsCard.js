@@ -1,8 +1,8 @@
 import {Card} from './Card'
 
 export class NewsCard extends Card {
-  constructor(templateSelector, card) {
-    super(templateSelector);
+  constructor(templateSelector,formatDate, card) {
+    super(templateSelector,formatDate);
     this.title = card.title;
     this.date = card.date;
     this.text = card.text;
@@ -19,10 +19,10 @@ export class NewsCard extends Card {
     const text = this.card.querySelector('.news-card__text');
     const author = this.card.querySelector('.news-card__author');
     title.textContent = this.title
-    date.textContent = this.date
+    date.textContent = this._formatDate(this.date)
     text.textContent = this.text
     author.textContent = this.author
-    image.src = this.imgUrl
+    image.src = this.imgUrl || 'https://bagiraclub.ru/images/bagiraclub/2017/10/k12-326x235.jpg'
     link.href = this.link
     return this.card
   }

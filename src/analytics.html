@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
   <link rel="shortcut icon" href="<%= require('./images/favicon.png') %>" type="image/x-icon">
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
   <title>Document</title>
 </head>
 <body class="root">
   <div class="root__cover">
-  <header class="header header_theme_white">
+  <header class="header header_diveme_white">
     <div class="header__container root__section root__section_layout">
     <p class="header__logo">NewsAnalyzer</p>
     <nav class="header__nav">
@@ -29,100 +29,38 @@
       <a href="./index.html" class="link breadcrums__link breadcrums__link_active">Главная/</a>
       <a href="./analytics.html" class="link breadcrums__link">Аналитика</a>
     </nav>
-    <h1 class="paper__title title title_size_m">Вы спросили: «Путешествия»</h1>
-    <p class="paper__text text">Новостей за неделю: <span class="paper__text-bold">34 324</span></p>
-    <p class="paper__text text">Упоминаний в залоговках: <span class="paper__text-bold">235</span></p>
+    <h1 class="paper__title title title_size_m">Вы спросили: «<span class="paper__query">Путешествия</span>»</h1>
+    <p class="paper__text text">Новостей за неделю: <span class="paper__text-bold paper__text-bold_total">34 324</span></p>
+    <p class="paper__text text">Упоминаний в залоговках: <span class="paper__text-bold paper__text-bold_title">235</span></p>
   </section>
   <div class="root__cover root__cover_bg_gray">
 
     <article class="stats root__section root__section_main">
       <h2 class="title title_size_s stats__title">Аналитика по дням</h2>
-      <table class="table">
-        <tr class="table__row table__row_type_heading">
-          <th class="table__heading">Дата \n (Август)</th>
-          <th class="table__heading">Количество упоминаний</th>
-        </tr>
-        <tr class="table__row table__row_type_number">
-          <th class="table__heading"></th>
-          <th class="table__heading">0</th>
-          <th class="table__heading">25</th>
-          <th class="table__heading">50</th>
-          <th class="table__heading">75</th>
-          <th class="table__heading">100</th>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="table__row table__row_type_cell">
-          <td class="table__cell text">19, пн</td>
-          <td class="table__cell table__cell_wide">
-            <div class="progress-bar">
-              <span class="progress-bar__value">30</span>
-              <div class="progress-bar__fill" style="width: 30%"></div>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="table__row table__row_type_number">
-          <th class="table__heading"></th>
-          <th class="table__heading">0</th>
-          <th class="table__heading">25</th>
-          <th class="table__heading">50</th>
-          <th class="table__heading">75</th>
-          <th class="table__heading">100</th>
-        </tr>
-      </table>
+      <div class="table">
+        <div class="table__row table__row_type_heading">
+          <div class="table__heading">Дата \n (Август)</div>
+          <div class="table__heading">Количество упоминаний</div>
+        </div>
+        <div class="table__row table__row_type_number">
+          <div class="table__heading"></div>
+          <div class="table__heading">0</div>
+          <div class="table__heading">25</div>
+          <div class="table__heading">50</div>
+          <div class="table__heading">75</div>
+          <div class="table__heading">100</div>
+        </div>
+        <div class="table__stats">
+        </div>
+        <div class="table__row table__row_type_number">
+          <div class="table__heading"></div>
+          <div class="table__heading">0</div>
+          <div class="table__heading">25</div>
+          <div class="table__heading">50</div>
+          <div class="table__heading">75</div>
+          <div class="table__heading">100</div>
+        </div>
+      </div>
 
     </article>
   </div>
@@ -136,7 +74,7 @@
         </ul>
       </nav>
       <div class="footer__social-group">
-        <a href="https://github.com/SidorovN" target="_blank"  class="link footer__social-link">
+        <a href="https://gidivub.com/SidorovN" target="_blank"  class="link footer__social-link">
           <img src="<%=require('./images/gh.svg')%>" alt="Гитхаб" class="footer__social-image">
         </a>
         <a href="https://www.facebook.com/" class="link footer__social-link" target="_blank" >
@@ -145,6 +83,17 @@
       </div>
     </footer>
   </div>
+
+  <template class="stats-template">
+    <div class="table__row table__row_type_cell">
+      <div class="table__cell text">19, пн</div>
+      <div class="table__cell table__cell_wide">
+        <div class="progress-bar">
+          <span class="progress-bar__value">30</span>
+          <div class="progress-bar__fill" style="width: 30%"></div>
+        </div>
+      </div>
+    </div></template>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

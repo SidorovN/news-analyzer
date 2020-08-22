@@ -17,12 +17,13 @@ export class NewsCardList extends CardList {
     this.element.innerHTML = ''
     this.data = data;
     this.addNews()
+    this.showResults();
   }
 
   addNews = () => {
     this.render(this.data.slice(this.page * this.perPage, (this.page + 1) * this.perPage))
     this.page++
-    if(this.data.length > ((this.page + 1) * this.perPage)) {
+    if(this.data.length > ((this.page) * this.perPage)) {
       this.showButton()
     } else {
       this.hideButton()

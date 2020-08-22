@@ -6,10 +6,11 @@ export class SearchForm extends BaseComponent {
     this.selector = selector
     this.createCard = createCardCallback;
   }
-  init = () => {
+  init = (query='') => {
     this.element = this.setElement(this.selector)
-    this.setListeners()
     this.input = this.element.querySelector('input')
+    this.input.value = query
+    this.setListeners()
   }
   setListeners() {
     this.element.addEventListener('submit',this.formHandler)

@@ -1,5 +1,6 @@
 import "../pages/index.css";
 
+import {getToday,getDaysAgo, getCardDate,getStatsDate} from "./modules/utils/dateFunctions";
 import {DataStorage} from "./modules/DataStorage";
 import {Api} from "./modules/Api";
 import {CommitCard} from "./modules/CommitCard";
@@ -8,9 +9,10 @@ import {NewsCardList} from "./modules/NewsCardList";
 import {SearchForm} from "./modules/SearchForm";
 
 const NEWS_API_KEY = '39e60f014e98480c9cd4386a113dc9da'
-const NEWS_API_URL = 'https://nomoreparties.co/news/v2/top-headlines'
+const NEWS_API_URL = 'https://newsapi.org/v2/everything'
 const NEWS_CARD_SELECTOR = '.news-card-template'
 const FORM_SELECTOR = '.search__form'
+const DAYS_AGO = 7
 
 const newsListSelectors = {
   element: '.results__cards',
@@ -19,16 +21,20 @@ const newsListSelectors = {
   results: '.results',
   button: '.results__button'
 }
-
+console.log(getDaysAgo(DAYS_AGO));
 const newsConfig = {
   url: NEWS_API_URL,
+  all: 'everything',
+  title: 'top-headlines',
   apiKey: NEWS_API_KEY,
   lang: 'ru',
-  from:  "2020-08-01",
-  to: "2020-08-17",
+  from: getToday(),
+  to: getDaysAgo(DAYS_AGO),
   pageSize: 100,
+  sortBy: 'publishedAt'
 }
 
+console.log(getStatsDate(getToday()))
 const renderNews = query => {
   newsApi.fetchData(query)
     .then(res => {
@@ -36,7 +42,7 @@ const renderNews = query => {
         news: res.articles.map(elem => {
           return ({
             title: elem.title,
-            date: elem.publishedAt,
+            date: elem.publishedAt.slice(0,elem.publishedAt.indexOf('T')),
             text: elem.description,
             author: elem.source.name,
             link: elem.url,
@@ -60,19 +66,17 @@ const renderNews = query => {
 }
 
 const newsApi = new Api(newsConfig)
-const createNewsCard = (...args) => new NewsCard(NEWS_CARD_SELECTOR, ...args).create()
+const createNewsCard = (...args) => new NewsCard(NEWS_CARD_SELECTOR,getCardDate, ...args).create()
 const newsList = new NewsCardList(createNewsCard)
 const form = new SearchForm(FORM_SELECTOR, renderNews)
-form.init()
-newsList.init(newsListSelectors)
-
 const storage = new DataStorage()
 
-if(storage.query && storage.news) newsList.firstNews(storage.news)
+newsList.init(newsListSelectors)
 
-
-document.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const savedNews = storage.getStorage().news
+  const query = storage.getStorage().query
+  form.init(query)
   if(savedNews) {
     newsList.firstNews(savedNews)
   }

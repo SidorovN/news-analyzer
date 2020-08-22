@@ -10,7 +10,6 @@ export class CardList extends BaseComponent {
     data.forEach(elem => {
       this.element.append(this.addCard(elem))
     })
-    this.showResults();
   }
 
 }

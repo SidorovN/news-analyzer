@@ -1,17 +1,17 @@
 .github__list {
     box-sizing: border-box;
-    margin: 0 -104px 40px;
+    margin: 0 0px 40px;
     padding: 0;
     width: 100%;
-    overflow-x: auto;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    /*overflow-x: auto;*/
+    /*justify-content: center;*/
 }
 .github__list::-webkit-scrollbar {
     width: 0;
 }
-
+.swiper-wrapper {
+    display: flex;
+}
 
 @media screen and (max-width: 1024px) {
     .github__list {
