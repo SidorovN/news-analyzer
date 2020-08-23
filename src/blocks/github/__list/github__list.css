@@ -1,10 +1,10 @@
 .github__list {
+    position: relative;
     box-sizing: border-box;
     margin: 0 0px 40px;
     padding: 0;
     width: 100%;
-    /*overflow-x: auto;*/
-    /*justify-content: center;*/
+    z-index: 1;
 }
 .github__list::-webkit-scrollbar {
     width: 0;
@@ -12,10 +12,32 @@
 .swiper-wrapper {
     display: flex;
 }
+.github__list::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 90px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    z-index: 2;
+}
+
+.github__list::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 90px;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    z-index: 2;
+}
 
 @media screen and (max-width: 1024px) {
-    .github__list {
-        margin-left: -18px;
-        margin-right: -18px;
+    .github__list::before,
+    .github__list::after {
+        display: none;
     }
 }
+

@@ -84,45 +84,12 @@
         </div>
           <div class="github__list swiper-container">
             <div class="swiper-wrapper">
-              <div class="commit-card swiper-slide">
-                <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-                <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-                <h3 class="commit-card__name">Мария Фёдорова</h3>
-                <p class="commit-card__mail">mariiifed@yandex.ru</p>
-                <p class="commit-card__text">With Emmet, you can type CSS-like expressions
-                  that can be dynamically parsed, and produce
-                  output depending on what you type in the abb...</p>
-              </div>
-              <div class="commit-card swiper-slide">
-                <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-                <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-                <h3 class="commit-card__name">Мария Фёдорова</h3>
-                <p class="commit-card__mail">mariiifed@yandex.ru</p>
-                <p class="commit-card__text">With Emmet, you can type CSS-like expressions
-                  that can be dynamically parsed, and produce
-                  output depending on what you type in the abb...</p>
-              </div>
-              <div class="commit-card swiper-slide">
-                <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-                <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-                <h3 class="commit-card__name">Мария Фёдорова</h3>
-                <p class="commit-card__mail">mariiifed@yandex.ru</p>
-                <p class="commit-card__text">With Emmet, you can type CSS-like expressions
-                  that can be dynamically parsed, and produce
-                  output depending on what you type in the abb...</p>
-              </div>
-              <div class="commit-card swiper-slide">
-                <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
-                <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
-                <h3 class="commit-card__name">Мария Фёдорова</h3>
-                <p class="commit-card__mail">mariiifed@yandex.ru</p>
-                <p class="commit-card__text">With Emmet, you can type CSS-like expressions
-                  that can be dynamically parsed, and produce
-                  output depending on what you type in the abb...</p>
-              </div>
+
         </div>
 
       </div>
+    <button class="github__button github__button-next"></button>
+    <button class="github__button github__button-prev"></button>
       <div class="pagination">
         <div class="swiper-pagination"></div>
       </div>
@@ -146,7 +113,17 @@
     </div>
   </footer>
   </div>
-
+<template class="commit-card-template">
+  <div class="commit-card swiper-slide">
+    <time datetime="2015-11-18" class="commit-card__date">18 ноября 2015</time>
+    <img src="https://www.navigato.ru/content/news/image18553.jpg" alt="Фоторграфия" class="commit-card__avatar">
+    <h3 class="commit-card__name">Мария Фёдорова</h3>
+    <p class="commit-card__mail">mariiifed@yandex.ru</p>
+    <p class="commit-card__text">With Emmet, you can type CSS-like expressions
+      that can be dynamically parsed, and produce
+      output depending on what you type in the abb...</p>
+  </div>
+</template>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

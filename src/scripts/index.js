@@ -1,27 +1,14 @@
 import "../pages/index.css";
 
-import {getToday,getDaysAgo, getCardDate,getStatsDate} from "./modules/utils/dateFunctions";
+import {getToday,getDaysAgo, getCardDate} from "./utils/dateFunctions";
 import {DataStorage} from "./modules/DataStorage";
-import {Api} from "./modules/Api";
-import {CommitCard} from "./modules/CommitCard";
 import {NewsCard} from "./modules/NewsCard";
 import {NewsCardList} from "./modules/NewsCardList";
 import {SearchForm} from "./modules/SearchForm";
+import {NewsApi} from "./modules/NewsApi";
+import {NEWS_API_KEY,NEWS_API_URL,NEWS_CARD_SELECTOR,NEWS_LIST_SELECTOTS,FORM_SELECTOR,DAYS_AGO} from "./constans/constans";
 
-const NEWS_API_KEY = '39e60f014e98480c9cd4386a113dc9da'
-const NEWS_API_URL = 'https://newsapi.org/v2/everything'
-const NEWS_CARD_SELECTOR = '.news-card-template'
-const FORM_SELECTOR = '.search__form'
-const DAYS_AGO = 7
 
-const newsListSelectors = {
-  element: '.results__cards',
-  preloader: '.preloader',
-  notFound: '.not-found',
-  results: '.results',
-  button: '.results__button'
-}
-console.log(getDaysAgo(DAYS_AGO));
 const newsConfig = {
   url: NEWS_API_URL,
   all: 'everything',
@@ -34,7 +21,6 @@ const newsConfig = {
   sortBy: 'publishedAt'
 }
 
-console.log(getStatsDate(getToday()))
 const renderNews = query => {
   newsApi.fetchData(query)
     .then(res => {
@@ -65,13 +51,13 @@ const renderNews = query => {
     })
 }
 
-const newsApi = new Api(newsConfig)
+const newsApi = new NewsApi(newsConfig)
 const createNewsCard = (...args) => new NewsCard(NEWS_CARD_SELECTOR,getCardDate, ...args).create()
 const newsList = new NewsCardList(createNewsCard)
 const form = new SearchForm(FORM_SELECTOR, renderNews)
 const storage = new DataStorage()
 
-newsList.init(newsListSelectors)
+newsList.init(NEWS_LIST_SELECTOTS)
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedNews = storage.getStorage().news

@@ -1,6 +1,6 @@
 export class DataStorage {
   setStorage({query,news}) {
-    console.log({query,news,total})
+    console.log({query,news})
     window.localStorage.setItem('query',JSON.stringify(query))
     window.localStorage.setItem('news',JSON.stringify(news))
   }
