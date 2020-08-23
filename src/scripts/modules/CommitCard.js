@@ -3,7 +3,6 @@ import {Card} from "./Card";
 export class CommitCard extends Card {
   constructor(templateSelector,formatDate, card) {
     super(templateSelector,formatDate);
-    console.log(card)
     this.name = card.name;
     this.date = card.date;
     this.text = card.text;

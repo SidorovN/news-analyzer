@@ -1,5 +1,5 @@
 export const NEWS_API_KEY = '39e60f014e98480c9cd4386a113dc9da'
-export const NEWS_API_URL = 'https://newsapi.org/v2/everything'
+export const NEWS_API_URL = 'https://nomoreparties.co/news/v2/everything'
 export const NEWS_CARD_SELECTOR = '.news-card-template'
 export const FORM_SELECTOR = '.search__form'
 export const DAYS_AGO = 7
