@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedNews = storage.getStorage().news
   const query = storage.getStorage().query
   form.init(query)
-  if(savedNews) {
+  if(savedNews.length) {
     newsList.firstNews(savedNews)
   }
 })

@@ -3,7 +3,8 @@ import "../pages/analytics.css";
 import {getToday,getDaysAgo,getStatsDate} from "./utils/dateFunctions";
 import {Analytics} from "./modules/Analytics";
 import {StatsRow} from "./modules/StatsRow";
-import {DAYS_AGO} from "./constans/constans";
+import {DAYS_AGO,STATS_SELECTORS,STATS_R0W_SELECTOR} from "./constans/constans";
+import {DataStorage} from "./modules/DataStorage";
 
 
 const createStat = (...args) => new StatsRow(STATS_R0W_SELECTOR,getStatsDate, ...args).create()
