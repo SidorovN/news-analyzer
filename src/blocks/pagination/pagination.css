@@ -6,4 +6,10 @@
     justify-content: center;
 }
 
+.swiper-pagination-bullet {
+    margin: 0 2px;
+}
+.swiper-pagination-bullet-active {
+    background: black;
+}
 
