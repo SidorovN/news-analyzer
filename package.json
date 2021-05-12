@@ -46,6 +46,6 @@
     "babel-polyfill": "6.26.0",
     "core-js": "3.4.1",
     "http-server": "0.12.3",
-    "swiper": "^6.1.2"
+    "swiper": "^6.5.1"
   }
 }
